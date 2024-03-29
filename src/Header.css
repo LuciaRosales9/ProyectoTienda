@@ -1,0 +1,11 @@
+li{
+    font-size: medium;
+    color: red;
+
+}
+
+ul {
+    display: flex; /* Establece el contenedor como un flex container */
+    list-style-type: none; /* Elimina los estilos de lista predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+  }
