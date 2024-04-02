@@ -59,6 +59,9 @@ header {
     padding: 30px; /* Relleno de 30px */
 }
 
+.Medio {
+    background-color: #C3B6DD;
+}
 /* Estilo para los enlaces en el encabezado al pasar el ratón */
 header a:hover {
     color: lightslategrey; /* Cambia el color del texto al pasar el ratón */

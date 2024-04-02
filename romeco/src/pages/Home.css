@@ -9,7 +9,7 @@ h2{
 }
 .coleccion {
     text-align: center;
-    background-color: lightgrey;
+    background-color: #C3B6DD;
     font-weight: bold;
     padding-bottom:20px;
     padding-top:20px;
@@ -20,7 +20,7 @@ h2{
     width: 300px; /* Ancho fijo para las imágenes */
     height: 300px; /* Alto fijo para las imágenes */
     object-fit: cover; /* Ajusta la imagen para llenar el contenedor manteniendo la relación de aspecto */
-    border: 2px solid black; /* Añade un borde de 2px sólido negro a las imágenes */
+    border: 2px solid #3d3c3f; /* Añade un borde de 2px sólido negro a las imágenes */
   }
 
 .container {
