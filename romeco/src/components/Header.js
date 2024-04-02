@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css'; // Importa el archivo de estilos CSS
+import '../styles/Header.css'; // Importa el archivo de estilos CSS
 import { Link } from 'react-router-dom';
 
 

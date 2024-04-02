@@ -1,4 +1,4 @@
-import './Gallery.css'
+import '../styles/Gallery.css'
 
 export const Gallery = () => {
   return (

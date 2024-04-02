@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importar los estilos de Bootstra
-import './Home.css'
+import '../styles/Home.css'
 import { Gallery } from './gallery';
 export const Home = () => {
     return (

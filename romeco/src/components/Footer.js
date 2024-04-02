@@ -1,4 +1,4 @@
-import './Footer.css'; // Importa el archivo de estilos CSS,  <a href="#titulo">Ir al comienzo</a> 
+import '../styles/Footer.css'; // Importa el archivo de estilos CSS,  <a href="#titulo">Ir al comienzo</a> 
 
 import React from 'react';
 

@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importar los estilos de Bootstra
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import './Contact.css'
+import '../styles/Contact.css'
 export const InfoYAyuda = () => {
 
     return (
