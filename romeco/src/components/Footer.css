@@ -1,0 +1,28 @@
+footer {
+    background-color: #C3B6DD; /* Establece el color de fondo del footer */
+    padding: 3rem; /* Añade un relleno interno de 3 unidades de medida */
+    color: white; /* Establece el color del texto dentro del footer */
+}
+
+footer section {
+    float: right; /* Traslada los elementos de sección hacia la derecha */
+}
+
+footer p {
+    margin: 0; /* Elimina el margen exterior del párrafo */
+    text-align: left; /* Alinea el texto del párrafo a la izquierda */
+    color: black; /* Establece el color del texto del párrafo */
+    font-weight: bold; /* Establece el peso de la fuente como negrita */
+}
+
+footer a {
+    transition: color 0.3s ease; /* Aplica una transición suave al color del enlace */
+    color: white; /* Establece el color del enlace como blanco */
+    text-decoration: none; /* Elimina la decoración de subrayado del enlace */
+    color: black; /* Establece el color del enlace como negro */
+    font-weight: bold; /* Establece el peso de la fuente del enlace como negrita */
+}
+
+footer a:hover {
+    color: white; /* Cambia el color del enlace a blanco al pasar el ratón por encima */
+}
