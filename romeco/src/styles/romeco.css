@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+h1{
+    font-family: 'Cutive Mono', monospace; /* Utiliza la fuente 'Cutive Mono' */
+    font-size: 2rem; /* Tamaño de fuente muy grande */
+    letter-spacing: 10px; /* Espaciado de 2 píxeles entre letras */
+}
+p{
+    text-align:center;
+   
+}

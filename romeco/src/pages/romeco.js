@@ -1,3 +1,4 @@
+import '../styles/romeco.css'
 export const About = () => {
     return (
         <section>

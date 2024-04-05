@@ -12,7 +12,7 @@ function Header() {
           <a href="/romeco" className='a'>ROMECO</a>
         </ul>
         <ul className='demas'>
-          <li><Link to="/coleccion" className='a'>COLECCIÓN</Link></li>
+          <li><Link to="/catalogo" className='a'>CATÁLOGO</Link></li>
           <li><Link to="/" className='a'>HOME</Link></li>
           <li><Link to="/infoyayuda" className='a'>INFO Y AYUDA</Link></li>
         </ul>

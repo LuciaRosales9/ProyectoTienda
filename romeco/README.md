@@ -1,3 +1,21 @@
+# Commands
+npm install -g create-react-app
+create-react-app romeco
+cd romeco
+npm install 
+npm start   
+npm install react-router-dom
+npm install bootstrap jquery popper.js        
+npm install react-bootstrap bootstrap
+
+
+
+# Commands Vite
+
+npm create vite@latest
+npm install
+npm run dev
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
