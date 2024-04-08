@@ -9,7 +9,7 @@ function Header() {
     <header>
       <nav>
         <ul className='romeco'>
-          <a href="/romeco" className='a'>ROMECO</a>
+          <a href="/romeco" className='a'>Romeco</a>
         </ul>
         <ul className='demas'>
           <li><Link to="/catalogo" className='a'>CATÁLOGO</Link></li>

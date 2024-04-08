@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importar los estilos de Bootstra
 import '../styles/Home.css'
 import { Gallery } from '../components/gallery';
+
 export const Home = () => {
     return (
       <section className='Section'>
