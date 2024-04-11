@@ -1,3 +1,25 @@
-.acordeon {
-    padding: 10px 10px ;
+
+.TitlesInfoYAyuda {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom:20px;
+    padding-top:20px;
+}
+
+.accordion{
+    padding-left:200px;
+    padding-right:200px;
+}
+
+  
+.imagenTalles {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Alinea la imagen correctamente */
+    margin: 0 auto; /* Centra horizontalmente la imagen usando márgenes automáticos */
+}
+
+.carousel {
+    padding-left:200px;
+    padding-right:200px;
 }
