@@ -1,13 +1,11 @@
 import '../styles/InfoYAyuda.css'
-import React, { useState } from 'react'; //para que el estado showImage funcione
+import React, { useState } from 'react'; //para que el estado showImageOne funcione
 export const InfoYAyuda = () => {
 
   //para mostrar imagen de talles cuando se abre el primer acordion
-  const [showImage, setShowImage] = useState(false);
+  const [showImageOne, setShowImageOne] = useState(false);
+  const [showImageTwo, setShowImageTwo] = useState(false);
 
-  const toggleImage = () => {
-    setShowImage(!showImage);
-  };
 
   return (
     <section>
@@ -16,13 +14,13 @@ export const InfoYAyuda = () => {
 
     <section class="accordion" id="accordionExample">
   
-    <section class="accordion-item">
+    <section class="accordion-item" >
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" onClick={toggleImage} /* Este es el evento onClick de React que asigna la función toggleImage para que se ejecute cuando se haga clic en el botón. Cuando el botón se haga clic, la función toggleImage cambiará el estado de showImage, lo que afectará si la imagen se muestra o no. */>
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" onClick={() => setShowImageOne(!showImageOne)} /*  Cuando el botón se haga clic,cambiará el estado de showImageOne, lo que afectará si la imagen se muestra o no. */>
         ¿Cómo saber la medida de mi dedo para pedir mis anillos ?
       </button>
     </h2>
-    <section id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <section id="collapseOne" class="accordion-collapse collapse" >
       <section class="accordion-body">
       Sólo necesitaremos una cinta métrica y nuestro dedo. 
       Coge la cinta métrica y mide la circunferencia de tu 
@@ -33,26 +31,27 @@ export const InfoYAyuda = () => {
       tallas que os enseñamos aqui abajo y comprueba la equivalencia de 
       la medida con el número de talla.
       <br></br>
-  
       </section>
     </section>
   </section>
-  <section className="imagen-container" style={{ display: showImage ? 'block' : 'none' }}>
-    <img src="img_tablaTalles.png" className="imagenTalles" alt="Tabla de tallas de anillos" />
+  <section className="imagen-container" style={{ display: showImageOne ? 'block' : 'none' }}>
+    <img src="img_tablaTalles.png" className="img-fluid" alt="Tabla de tallas de anillos" />
   </section>
     
   <section class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"  onClick={() => setShowImageTwo(!showImageTwo)}/*Cuando el botón se haga clic,  cambiará el estado de showImageOne, lo que afectará si la imagen se muestra o no. */>
       ¿Qué formas de pago puedo aprovechar para realizar mi compra?
       </button>
     </h2>
-    <section id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <section id="collapseTwo" class="accordion-collapse collapse" >
       <section class="accordion-body">
-        Disponemos de los siguientes medios de pago:
-        //INSERTAR FOTOS
+        Disponemos de los siguientes medios de pago
       </section>
     </section>
+  </section>
+  <section className="imagen-container" style={{ display: showImageTwo ? 'block' : 'none' }}>
+    <img src="img_mediosDePago.png" className="img-fluid" alt="Tabla de tallas de anillos" />
   </section>
 
   <section class="accordion-item">
@@ -61,7 +60,7 @@ export const InfoYAyuda = () => {
       ¿Dónde puedo recibir mi pedido?
       </button>
     </h2>
-    <section id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <section id="collapseThree" class="accordion-collapse collapse" >
       <section class="accordion-body">
       Realizamos envíos a todo el país.
       </section>
@@ -74,7 +73,7 @@ export const InfoYAyuda = () => {
       ¿Cuánto tarda en llegar el pedido?
       </button>
     </h2>
-    <section id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <section id="collapseFour" class="accordion-collapse collapse" >
       <section class="accordion-body">
       El tiempo de entrega dependerá del tipo de envío seleccionado. En general la demora se encuentra entre 
       3 y 7 días hábiles luego de acreditado el pago.
@@ -88,7 +87,7 @@ export const InfoYAyuda = () => {
       ¿Cuál es el plazo para realizar un cambio?
       </button>
     </h2>
-    <section id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <section id="collapseFive" class="accordion-collapse collapse" >
       <section class="accordion-body">
       Puedes solicitar un cambio hasta 15 días luego de realizada la compra.
       </section>
@@ -101,7 +100,7 @@ export const InfoYAyuda = () => {
       ¿Qué debo hacer si el producto no llega en buen estado?
       </button>
     </h2>
-    <section id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <section id="collapseSix" class="accordion-collapse collapse" >
       <section class="accordion-body">
       Ponte en contacto con nosotros mediante nuestro correo romecojewelry@gmail.com y te enviaremos uno nuevo.
       </section>
@@ -114,7 +113,7 @@ export const InfoYAyuda = () => {
       ¿Cómo recibiré mi joya?
       </button>
     </h2>
-    <section id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <section id="collapseSeven" class="accordion-collapse collapse" >
       <section class="accordion-body">
         Todas nuestras joyas se entregan en estuches de joyería a 
         medida para cada tipo. Si tu joya tiene diamantes de más de 0.03 ct 
@@ -144,8 +143,10 @@ export const InfoYAyuda = () => {
     <section class="carousel-item active">
       <img src="img_tablaTalles.png" class="d-block w-100" alt="..."></img>
       <section class="carousel-caption d-none d-md-block">
-        <h5>Primer paso</h5>
-        <p>Vé a la sección "Catálogo" y Selecciona todos las joyas que deseas agregar a tu compra (agregar al carrito de compras)</p>
+        <section class="texto-comoComprar">
+          <h5>Primer paso</h5>
+          <p>Vé a la sección "Catálogo" y Selecciona todos las joyas que deseas agregar a tu compra (agregar al carrito de compras)</p>
+        </section>
       </section>
     </section>
 
@@ -160,8 +161,10 @@ export const InfoYAyuda = () => {
     <section class="carousel-item">
       <img src="img_tablaTalles.png" class="d-block w-100" alt="..."></img>
       <section class="carousel-caption d-none d-md-block">
-        <h5>Tercer paso</h5>
-        <p>Indicar metodo de pago, método de envío y dirección de envío (lo mas exacta posible).</p>
+        <section className="texto-comoComprar">
+          <h5>Tercer paso</h5>
+          <p>Indicar metodo de pago, método de envío y dirección de envío (lo mas exacta posible).</p>
+        </section>
       </section>
     </section>
 
@@ -181,7 +184,7 @@ export const InfoYAyuda = () => {
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</section>
+  </section>
   </section>
 
   );
