@@ -1,23 +1,40 @@
-
+import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup'; // Importa ButtonGroup
+import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown';
+import '../styles/Catalogo.css'
 
-  export const Catalogo = () => {
+
+
+export const Catalogo = () => {
   return (
     
-    function BasicExample() {
-      return (
-        <Dropdown>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
-            Dropdown Button
-          </Dropdown.Toggle>
-    
-          <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
-      );
-    }
+    <ButtonGroup className='Botones'> 
+      <DropdownButton className="Producto Aro" title="Aros" id="bg-nested-dropdown">
+        <Dropdown.Item>Acero</Dropdown.Item>
+        <Dropdown.Item>Oro</Dropdown.Item>
+        <Dropdown.Item>Plata</Dropdown.Item>
+      </DropdownButton>
+      <DropdownButton className="Producto Cadena/dije" title="Cadenas/Dijes" id="bg-nested-dropdown">
+        <Dropdown.Item>Acero</Dropdown.Item>
+        <Dropdown.Item>Oro</Dropdown.Item>
+        <Dropdown.Item>Plata</Dropdown.Item>
+      </DropdownButton>
+      <DropdownButton className="Producto Anillo" title="Anillos" id="bg-nested-dropdown">
+        <Dropdown.Item>Acero</Dropdown.Item>
+        <Dropdown.Item>Oro</Dropdown.Item>
+        <Dropdown.Item>Plata</Dropdown.Item>
+      </DropdownButton>
+      <DropdownButton className="Producto Reloj" title="Relojes" id="bg-nested-dropdown">
+        <Dropdown.Item>Acero</Dropdown.Item>
+        <Dropdown.Item>Oro</Dropdown.Item>
+        <Dropdown.Item>Plata</Dropdown.Item>
+      </DropdownButton>
+      <DropdownButton className="Producto Pulsera" title="Pulseras" id="bg-nested-dropdown">
+        <Dropdown.Item>Acero</Dropdown.Item>
+        <Dropdown.Item>Oro</Dropdown.Item>
+        <Dropdown.Item>Plata</Dropdown.Item>
+      </DropdownButton>
+    </ButtonGroup> /* Cierra el ButtonGroup */
   );
 };
