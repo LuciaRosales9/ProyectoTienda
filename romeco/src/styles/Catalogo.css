@@ -1,0 +1,25 @@
+.Producto .btn {
+    background-color: white;
+    color: black;
+    border: none;
+    text-align: center; /* Centra el contenido horizontalmente */
+}  
+.Producto .btn:hover {
+    background-color: #C3B6DD; /* Cambia el color al pasar el cursor por encima */
+    border: none;
+    
+} 
+.Producto .btn:not(:disabled):not(.disabled):active {
+    background-color: C3B6DD; /* Cambia el color al hacer clic */
+    border: 1px solid black; /* Agrega un borde negro */
+}
+/* Estilo para los elementos de la lista desplegable */
+.Producto .dropdown-item.active,
+.Producto .dropdown-item:active {
+  background-color: #C3B6DD; /* Cambia el color de fondo de la opción seleccionada */
+}
+.Botones {
+    text-align: center; /* Centra el contenido horizontalmente */
+    display: flex;
+    justify-content: center;
+}
