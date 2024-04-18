@@ -3,15 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'jquery/dist/jquery.min.js';
 import 'popper.js/dist/umd/popper.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
-
-import { Catalogo } from './pages/Catalogo';
-
-import { Home } from './pages/Home';
-import { About } from './pages/romeco';
-import Footer from './components/Footer'
-import { InfoYAyuda } from './pages/InfoYAyuda';
 import './styles/App.css';
 import React from 'react';
+
+import { Catalogo } from './pages/Catalogo';
+import { Home } from './pages/Home';
+import { AboutUs } from './pages/romeco';
+import {Footer} from './components/Footer'
+import { InfoYAyuda } from './pages/InfoYAyuda';
 import Header from './components/Header';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
@@ -24,7 +23,7 @@ function App() {
       <section>
         <Routes>
           <Route path="/catalogo" element={<Catalogo />} /> 
-          <Route path="/romeco" element={<About />} />
+          <Route path="/romeco" element={<AboutUs />} />
           <Route path="/infoyayuda" element={<InfoYAyuda />} />
           <Route path="/" element={<Home />} />
         </Routes>
