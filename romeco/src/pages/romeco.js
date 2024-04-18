@@ -1,8 +1,8 @@
 import '../styles/romeco.css'
 import { GalleryRomeco } from '../components/galleryRomeco';
-export const About = () => {
+export const AboutUs = () => {
     return (
-        <section>
+        <section className='seccionRomeco'>
             <h1>Romeco</h1>
             <p>Bienvenido a nuestra joyería, donde la elegancia y la excelencia se encuentran para crear momentos inolvidables.</p> 
             <p>Nos enorgullece ofrecer una exquisita selección de joyas finas, meticulosamente diseñadas para realzar la belleza y la singularidad de cada individuo.</p>

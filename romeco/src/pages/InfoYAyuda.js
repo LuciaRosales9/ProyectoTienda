@@ -8,8 +8,8 @@ export const InfoYAyuda = () => {
 
 
   return (
-    <section>
-      <section className='TitlesInfoYAyuda' ><h2>PREGUNTAS FRECUENTES</h2></section>
+    <section className='seccionInfoYAyuda'>
+      <section className='TitlesInfoYAyuda' ><h1>Preguntas frecuentes</h1></section>
 
 
     <section class="accordion" id="accordionExample">
@@ -35,7 +35,7 @@ export const InfoYAyuda = () => {
     </section>
   </section>
   <section className="imagen-container" style={{ display: showImageOne ? 'block' : 'none' }}>
-    <img src="img_tablaTalles.png" className="img-fluid" alt="Tabla de tallas de anillos" />
+    <img src="../images/../images/img_tablaTalles.png" className="img-fluid" alt="Tabla de tallas de anillos" />
   </section>
     
   <section class="accordion-item">
@@ -51,7 +51,7 @@ export const InfoYAyuda = () => {
     </section>
   </section>
   <section className="imagen-container" style={{ display: showImageTwo ? 'block' : 'none' }}>
-    <img src="img_mediosDePago.png" className="img-fluid" alt="Tabla de tallas de anillos" />
+    <img src="../images/img_mediosDePago.png" className="img-fluid" alt="Tabla de tallas de anillos" />
   </section>
 
   <section class="accordion-item">
@@ -127,7 +127,7 @@ export const InfoYAyuda = () => {
 
   </section>
     
-  <section className='TitlesInfoYAyuda' ><h2>¿CÓMO COMPRAR?</h2></section>
+  <section className='TitlesInfoYAyuda' ><h1>¿Cómo comprar?</h1></section>
 
 
   <section id="carouselExampleCaptions" className="carousel">
@@ -141,38 +141,42 @@ export const InfoYAyuda = () => {
   </section>
   <section class="carousel-inner">
     <section class="carousel-item active">
-      <img src="img_tablaTalles.png" class="d-block w-100" alt="..."></img>
+      <img src="../images/img_tablaTalles.png" class="d-block w-100" alt="..."></img>
       <section class="carousel-caption d-none d-md-block">
-        <section class="texto-comoComprar">
+        <section className="texto-comoComprar">
           <h5>Primer paso</h5>
-          <p>Vé a la sección "Catálogo" y Selecciona todos las joyas que deseas agregar a tu compra (agregar al carrito de compras)</p>
+          <h6>Vé a la sección "Catálogo" y Selecciona todos las joyas que deseas agregar a tu compra (agregar al carrito de compras)</h6>
         </section>
       </section>
     </section>
 
     <section class="carousel-item">
-      <img src="img_tablaTalles.png" class="d-block w-100" alt="..."></img>
+      <img src="../images/img_tablaTalles.png" class="d-block w-100" alt="..."></img>
       <section class="carousel-caption d-none d-md-block">
-        <h5>Segundo paso</h5>
-        <p>Ir al carrito de compras, una vez que alcances el monto mínimo, vas a poder seleccionar la opción COMPRAR.</p>
+        <section className='texto-comoComprar'>
+          <h5>Segundo paso</h5>
+          <h6>Ir al carrito de compras, una vez que alcances el monto mínimo, vas a poder seleccionar la opción COMPRAR.</h6>
+        </section>
       </section>
     </section>
 
     <section class="carousel-item">
-      <img src="img_tablaTalles.png" class="d-block w-100" alt="..."></img>
+      <img src="../images/img_tablaTalles.png" class="d-block w-100" alt="..."></img>
       <section class="carousel-caption d-none d-md-block">
         <section className="texto-comoComprar">
           <h5>Tercer paso</h5>
-          <p>Indicar metodo de pago, método de envío y dirección de envío (lo mas exacta posible).</p>
+          <h6>Indicar metodo de pago, método de envío y dirección de envío (lo mas exacta posible).</h6>
         </section>
       </section>
     </section>
 
     <section class="carousel-item">
-      <img src="img_tablaTalles.png" class="d-block w-100" alt="..."></img>
+      <img src="../images/img_tablaTalles.png" class="d-block w-100" alt="..."></img>
       <section class="carousel-caption d-none d-md-block">
-        <h5>Cuarto paso</h5>
-        <p>Indicar metodo de pago, método de envío y dirección de envío (lo mas exacta posible).</p>
+        <section className="texto-comoComprar">
+          <h5>Cuarto paso</h5>
+          <h6>Indicar metodo de pago, método de envío y dirección de envío (lo mas exacta posible).</h6>
+        </section>
       </section>
     </section>
   </section>

@@ -1,29 +1,37 @@
+section{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .imagen-pequena {
-    max-width: 100%;
-    height: auto;
-  }
+  max-width: 100%;
+  height: auto;
+}
+
 h2{
   font-size:big;
   font-style: bold;
 
 }
 .coleccion {
-    text-align: center;
-    background-color: #C3B6DD;
-    font-weight: bold;
-    padding-bottom:20px;
-    padding-top:20px;
+  text-align: center;
+  background-color: #C3B6DD;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .imagen {
-    flex: 1; /* Cada imagen ocupa el mismo espacio */
-    margin-right: 0; /* Elimina el margen derecho */
-    width: 300px; /* Ancho fijo para las imágenes */
-    height: 300px; /* Alto fijo para las imágenes */
-    object-fit: cover; /* Ajusta la imagen para llenar el contenedor manteniendo la relación de aspecto */
-    border: 2px solid #3d3c3f; /* Añade un borde de 2px sólido negro a las imágenes */
-  }
+  flex: 1; /* Cada imagen ocupa el mismo espacio */
+  margin-right: 0; /* Elimina el margen derecho */
+  width: 300px; /* Ancho fijo para las imágenes */
+  height: 300px; /* Alto fijo para las imágenes */
+  object-fit: cover; /* Ajusta la imagen para llenar el contenedor manteniendo la relación de aspecto */
+  border: 2px solid #3d3c3f; /* Añade un borde de 2px sólido negro a las imágenes */
+}
 
 .container {
-    display: flex; /* Establece un contenedor flexible */
-    justify-content: space-around;
-  }
+  display: flex; /* Establece un contenedor flexible */
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
