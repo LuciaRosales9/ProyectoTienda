@@ -7,7 +7,7 @@ export const Home = () => {
     return (
       <section className='Section'>
       <Carousel/>
-        <section className='coleccion' ><h2>NEW COLLECTION</h2></section>
+        <section className='coleccion' ><h1>New Collection</h1></section>
         <section className="container" >
           <Gallery/>
         </section>

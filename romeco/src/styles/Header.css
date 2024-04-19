@@ -4,7 +4,6 @@
 /* Estilo para los elementos de lista */
 li {
     font-size: 12px; /* Tamaño de fuente mediano */
-    margin-right: 20px; /* Margen derecho de 20px */
     transition: color 0.3s ease; /* Transición suave para el color del texto */
     color: black; /* Color de texto negro por defecto */
     padding-right:20px;
@@ -24,12 +23,16 @@ li {
     padding-bottom: 10px; /* Espaciado en la parte inferior */
     font-family: 'Parisienne', monospace; /* Utiliza la fuente 'Cutive Mono' */
     font-size: 2rem; /* Tamaño de fuente muy grande */
-    
 }
 
 /* Estilo para los elementos con la clase 'demas' */
 .demas {
-    text-align: right; /* Alinea el texto a la derecha */
+    text-align: center; /* Alinea el texto a la derecha */
+
+}
+
+.demas li {
+    width: 150px;
 }
 
 /* Estilo para las listas */
@@ -39,6 +42,7 @@ ul {
     padding: 0; /* Sin relleno */
     margin: 0; /* Sin margen */
     justify-content: center; /* Alinea los elementos al centro horizontalmente */
+    text-align: center;
 }
 
 /* Estilo para los contenedores div */

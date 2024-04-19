@@ -1,0 +1,12 @@
+
+.contenedorImgCarousel {
+    width: 100%; /* Ancho deseado */
+    aspect-ratio: 2 / 1; /* Relación de aspecto 2:1 (la mitad del ancho) */
+    overflow: hidden; /* Para recortar las partes de la imagen que excedan las dimensiones del contenedor */
+}
+
+.imgCarouselHome {
+    width: 100%; /* Asegura que la imagen llene completamente el contenedor */
+    height: 100%; /* Asegura que la imagen llene completamente el contenedor */
+    object-fit: cover; /* Hace que la imagen se ajuste dentro del contenedor manteniendo su relación de aspecto, recortando si es necesario */
+}
