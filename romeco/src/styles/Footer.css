@@ -1,3 +1,4 @@
+
 footer {
     background-color: #C3B6DD;
     text-align: center;
@@ -9,9 +10,9 @@ footer {
 
 }
 
-footer section {
-    float: center; /* Traslada los elementos de sección hacia la derecha */
-
+.containerFooter{
+  background-color: #C3B6DD;
+  width:100%;
 }
 
 footer p {
@@ -24,50 +25,10 @@ footer p {
 footer a {
     transition: color 0.3s ease; /* Aplica una transición suave al color del enlace */
     color: white; /* Establece el color del enlace como blanco */
-    text-decoration: none; /* Elimina la decor…
-[14:09, 17/4/2024] Ema Monjes: Gallery.css
-
-body {
-  background-color: #f8f8f8; /* Cambio de color de fondo */
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+    text-decoration: none; /* Elimina la decoración de subrayado del enlace */
+    font-weight: bold; /* Establece el peso de la fuente del enlace como negrita */
 }
 
-#gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Utilizar un diseño más flexible // Espacio entre las imágenes */
-  width: 90%; /* Ajuste del ancho para adaptarse al tamaño de la pantalla */
-  margin: 20px auto;
-}
-
-
-figure {
-  cursor: pointer; /* Indicar interactividad */
-  margin: 0; /* Eliminar el margen exterior */
-  padding: 10px; /* Añadir espacio alrededor de las imágenes */
-  position: relative;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombreado suave */
-}
-
-figure img {
-  width: 100%;
-  height: auto; /* Ajustar la altura automáticamente */
-  border: 3px solid #fff;
-  box-sizing: border-box;
-  transition: transform 0.3s ease; /* Agregar efecto de transición */
-}
-
-figure:hover img {
-  transform: scale(1.1); /* Aplicar un aumento de escala al pasar el ratón */
-}
-
-
-figcaption:hover {
-  background-color: rgba(255, 255, 255, 0.95); /* Cambiar el color de fondo al pasar el ratón */
-}
-
-@media screen and (max-width: 600px) {
-  #gallery {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajuste del diseño para pantallas más pequeñas */
-  }
+footer a:hover {
+    color: lightslategrey; /* Cambia el color del enlace a blanco al pasar el ratón por encima */
 }
