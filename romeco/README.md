@@ -7,7 +7,11 @@ npm start
 npm install react-router-dom
 npm install bootstrap jquery popper.js        
 npm install react-bootstrap bootstrap
-
+# Comandos backend 
+cd backend
+npm init -y
+npm install express
+npm install mongoose
 
 
 # Commands Vite
