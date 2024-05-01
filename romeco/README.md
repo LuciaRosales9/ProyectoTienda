@@ -7,8 +7,25 @@ npm start
 npm install react-router-dom
 npm install bootstrap jquery popper.js        
 npm install react-bootstrap bootstrap
+# Comandos backend 
+cd backend
+npm init -y
+npm install express
+npm install mongoose
 
+# Pasos
 
+conectar en la app de mongo a la base de datos [text](../backend/server.js)
+
+ir a la carpeta backend
+
+iniciar con node server.js
+
+http://localhost:5000/
+
+para ingresar a las diferentes rutas:
+
+http://localhost:5000/api/ (nombre de la ruta)
 
 # Commands Vite
 
