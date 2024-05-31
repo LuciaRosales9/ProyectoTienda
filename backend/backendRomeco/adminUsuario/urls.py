@@ -1,8 +1,9 @@
 from django.urls import path
-from . import views
+from adminUsuario.views import *
 
 urlpatterns = [
-    path('usuarios/', views.UsuarioListCreate.as_view(), name='usuario-list-create'),
-    path('usuarios/<int:pk>/', views.UsuarioRetrieveUpdateDestroy.as_view(), name='usuario-retrieve-update-destroy'),
-    path('login/', views.login_view, name='login'),  # Importando login_view desde el módulo views
+    # Definimos la ruta para la vista de inicio de sesión
+    path('login/', LoginView.as_view(), name='login'),
+    # Definimos la ruta para la vista de creación de usuario
+    path('crear_usuario/', CrearUsuarioView.as_view(), name='crear_usuario'),
 ]

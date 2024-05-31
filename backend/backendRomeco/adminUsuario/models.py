@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.exceptions import ValidationError
 import datetime
+from django.contrib.auth.hashers import make_password, check_password
 
 class Permiso(models.Model):
     nombre = models.CharField(max_length=50)
@@ -18,8 +19,8 @@ class Permiso(models.Model):
 
 class Usuario(models.Model):
     nombre = models.CharField(max_length=50)
-    contrasena = models.CharField(max_length=50)
-    mail = models.CharField(max_length=50)
+    contrasena = models.CharField(max_length=128)
+    mail = models.EmailField(max_length=50) 
     telefono = models.DecimalField(max_digits=10, decimal_places=0)
     fechaNacimiento = models.DateField()
     def __str__ (self):
@@ -38,6 +39,9 @@ class Usuario(models.Model):
             raise ValidationError("El número de teléfono no puede ser negativo.")
         if not self.telefono:
             raise ValidationError("El campo 'Teléfono' no puede estar vacío.")
+    def save(self, *args, **kwargs):
+        self.contrasena = make_password(self.contrasena)
+        super().save(*args, **kwargs)
         
 
 class Permiso_usuario(models.Model):
