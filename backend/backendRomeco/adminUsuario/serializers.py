@@ -2,7 +2,7 @@ from rest_framework import serializers
 from .models import *
 
 class LoginSerializer(serializers.Serializer):
-    nombre = serializers.CharField()
+    mail = serializers.EmailField()
     contrasena = serializers.CharField(write_only=True)
 
 class UsuarioSerializer(serializers.ModelSerializer):
