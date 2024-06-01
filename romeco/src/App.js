@@ -13,6 +13,7 @@ import { Footer } from './components/Footer'
 import { InfoYAyuda } from './pages/InfoYAyuda';
 import Header from './components/Header';
 import { CrearUsuario} from './pages/crearUsuario';
+import { LoginUsuario} from './pages/loginUsuario';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/infoyayuda" element={<InfoYAyuda />} />
           <Route path="/" element={<Home />} />
           <Route path="/CrearUsuario" element={<CrearUsuario />} />
+          <Route path="/LoginUsuario" element={<LoginUsuario />} />
         </Routes>
       </section>
               

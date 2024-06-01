@@ -17,10 +17,10 @@ class LoginView(APIView):
     def post(self, request):
         serializer = LoginSerializer(data=request.data)
         if serializer.is_valid():
-            nombre = serializer.validated_data['nombre']
+            mail = serializer.validated_data['mail']
             contrasena = serializer.validated_data['contrasena']
             try:
-                usuario = Usuario.objects.get(nombre=nombre)
+                usuario = Usuario.objects.get(mail=mail)
             except Usuario.DoesNotExist:
                 return Response({'error': 'Usuario no encontrado'}, status=status.HTTP_404_NOT_FOUND)
             
