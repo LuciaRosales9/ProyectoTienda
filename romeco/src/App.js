@@ -9,9 +9,10 @@ import React from 'react';
 import { Catalogo } from './pages/Catalogo';
 import { Home } from './pages/Home';
 import { AboutUs } from './pages/romeco';
-import {Footer} from './components/Footer'
+import { Footer } from './components/Footer'
 import { InfoYAyuda } from './pages/InfoYAyuda';
 import Header from './components/Header';
+import { CrearUsuario} from './pages/crearUsuario';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/romeco" element={<AboutUs />} />
           <Route path="/infoyayuda" element={<InfoYAyuda />} />
           <Route path="/" element={<Home />} />
+          <Route path="/CrearUsuario" element={<CrearUsuario />} />
         </Routes>
       </section>
               
