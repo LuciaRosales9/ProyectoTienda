@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 
 function RegistroUsuario() {
+  
+
+
   // Definimos los estados para los campos del formulario
   const [nombre, setNombre] = useState('');
   const [contrasena, setContrasena] = useState('');
@@ -45,17 +48,15 @@ function RegistroUsuario() {
       });
   };
 
-  return (
-    // Formulario de registro con campos controlados
-    <form onSubmit={handleRegistroSubmit}>
-      <input type="text" value={nombre} onChange={e => setNombre(e.target.value)} placeholder="Nombre" />
-      <input type="password" value={contrasena} onChange={e => setContrasena(e.target.value)} placeholder="Contraseña" />
-      <input type="email" value={mail} onChange={e => setMail(e.target.value)} placeholder="Correo electrónico" />
-      <input type="text" value={telefono} onChange={e => setTelefono(e.target.value)} placeholder="Teléfono" />
-      <input type="date" value={fechaNacimiento} onChange={e => setFechaNacimiento(e.target.value)} placeholder="Fecha de nacimiento" />
-      <button type="submit">Registrarse</button>
-    </form>
-  );
+  return {
+    nombre, setNombre,
+    contrasena, setContrasena,
+    mail, setMail,
+    telefono, setTelefono,
+    fechaNacimiento, setFechaNacimiento,
+    handleRegistroSubmit
+  };
+
 }
 
 export default RegistroUsuario;
