@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
+CORS_ALLOW_ALL_ORIGINS = True 
+CORS_ALLOW_ALL_HEADERS=True
+CORS_ALLOW_CREDENTIALS = True
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,7 +28,9 @@ SECRET_KEY = 'django-insecure-l=nybn&5m&qnkr)x4-^+876y@fz6v-nj*ku_83#7y21czc4m(i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "*"
+]
 
 
 # Application definition
@@ -39,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'adminUsuario',
     'rest_framework',
+    'corsheaders', #para permitir conexiones 
 ]
 
 MIDDLEWARE = [

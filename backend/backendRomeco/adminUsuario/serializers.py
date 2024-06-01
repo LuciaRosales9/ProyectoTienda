@@ -8,7 +8,7 @@ class LoginSerializer(serializers.Serializer):
 class UsuarioSerializer(serializers.ModelSerializer):
     class Meta:
         model = Usuario
-        fields = ['id', 'nombre','contraseña', 'mail', 'telefono', 'fechaNacimiento']
+        fields = ['id', 'nombre','contrasena', 'mail', 'telefono', 'fechaNacimiento']
 
 
 class PermisoSerializer(serializers.ModelSerializer):
