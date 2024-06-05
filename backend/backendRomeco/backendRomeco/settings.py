@@ -85,11 +85,11 @@ WSGI_APPLICATION = 'backendRomeco.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bdromeco',
-        'USER': 'postgres',
-        'PASSWORD': '44472050',
-        'HOST': 'localhost',   # O la dirección IP de tu servidor de PostgreSQL
-        'PORT': '5432',        # Puerto por defecto de PostgreSQL
+        'NAME': 'romeco',
+        'USER': 'root',
+        'PASSWORD': '11salta22',
+        'HOST': '149.50.137.137',
+        'PORT': '5432',     # Puerto por defecto de PostgreSQL
         
 
     }
