@@ -15,6 +15,12 @@ export const CrearUsuario = () => {
     //formulario
   return (
     <form onSubmit={handleRegistroSubmit}>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"></input>
+      </div>
+
+
       <input type="text" value={nombre} onChange={e => setNombre(e.target.value)} placeholder="Nombre" />
       <input type="password" value={contrasena} onChange={e => setContrasena(e.target.value)} placeholder="Contraseña" />
       <input type="email" value={mail} onChange={e => setMail(e.target.value)} placeholder="Correo electrónico" />
